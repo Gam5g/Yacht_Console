@@ -1,8 +1,14 @@
 package Yacht;
 
+import javax.swing.*;
+
 public class Main {
-    static public void main(String[] argc) {
-		new YachtDisplay();
-        
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new LoginScreen();
+            }
+        });
     }
 }
